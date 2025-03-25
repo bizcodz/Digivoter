@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
+}
+
+@layer base {
+  :root {
+    --background: #E8F0FF; /* rgb(232, 240, 255) */
+    --foreground: #0C192D; /* rgb(12, 25, 45) */
+
+    --card: #FFFFFF; /* rgb(255, 255, 255) */
+    --card-foreground: #0C192D; /* rgb(12, 25, 45) */
+
+    --popover: #FFFFFF; /* rgb(255, 255, 255) */
+    --popover-foreground: #0C192D; /* rgb(12, 25, 45) */
+
+    --primary: #0070FF; /* rgb(0, 112, 255) */
+    --primary-foreground: #E8F0FF; /* rgb(232, 240, 255) */
+
+    --secondary: #D9E1F0; /* rgb(217, 225, 240) */
+    --secondary-foreground: #1E2D3C; /* rgb(30, 45, 60) */
+
+    --muted: #D9E1F0; /* rgb(217, 225, 240) */
+    --muted-foreground: #7D8C9B; /* rgb(125, 140, 155) */
+
+    --accent: #C8E6FF; /* rgb(200, 230, 255) */
+    --accent-foreground: #1E2D3C; /* rgb(30, 45, 60) */
+
+    --destructive: #FF3232; /* rgb(255, 50, 50) */
+    --destructive-foreground: #E8F0FF; /* rgb(232, 240, 255) */
+
+    --border: #C8D2E6; /* rgb(200, 210, 230) */
+    --input: #C8D2E6; /* rgb(200, 210, 230) */
+    --ring: #0C192D; /* rgb(12, 25, 45) */
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  html, body {
+    @apply antialiased scroll-smooth;
+  }
+  
+  body {
+    @apply   font-sans;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .hero-heading {
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight;
+  }
+  
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-[#0070FF] text-[#0C192D] rounded-full font-medium transition-all 
+    hover:bg-[#0070FF]/90 focus:outline-none ;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-[#C8E6FF] text-[#1E2D3C] rounded-full font-medium transition-all
+    hover:bg-[#C8E6FF]/80 focus:outline-none focus:ring-2   focus:ring-offset-2;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border text-[#0C192D] focus:outline-none 
+    focus:ring-2 focus:border-transparent transition-all;
+  }
+  
+  .card-glass {
+    @apply rounded-2xl bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
+  }
+  
+  .badge {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-[#C8E6FF] text-[#1E2D3C];
+  }
+}
+.text-primary {
+  color: var(--primary);
+}
