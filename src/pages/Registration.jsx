@@ -36,7 +36,7 @@ const Registration = () => {
   const validateStepOne = () => {
     const newErrors = {};
     if (!formData.fullName) newErrors.fullName = "Full Name is required";
-    if (!formData.idNumber || !/^ZUP\d{7}$/.test(formData.idNumber)) newErrors.idNumber = "ID Number must be in the format AAAxxxxxxx";
+    if (!formData.idNumber || !/^[A-Z]{3}\d{7}$/.test(formData.idNumber)) newErrors.idNumber = "ID Number must be in the format AAAxxxxxxx";
     if (!formData.dateOfBirth || new Date().getFullYear() - new Date(formData.dateOfBirth).getFullYear() < 18) newErrors.dateOfBirth = "You must be at least 18 years old";
     return newErrors;
   };
