@@ -43,7 +43,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link 
-            to="/registration" 
+            to="/signup" 
             className={`font-medium transition ${isActive('/registration') ? 'text-primary' : 'text-foreground/80 hover:text-foreground'}`}
           >
             Registration

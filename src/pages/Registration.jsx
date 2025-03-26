@@ -90,7 +90,7 @@ const Registration = () => {
       setVoterInfo(newVoterInfo);
       setRegistrationComplete(true);
 
-      alert("Registration Complete: Your voter registration has been processed successfully");
+      // alert("Registration Complete: Your voter registration has been processed successfully");
     } catch (error) {
       alert("Error: Failed to process registration. Please try again.");
     } finally {

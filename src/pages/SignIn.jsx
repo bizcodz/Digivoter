@@ -24,10 +24,10 @@ const SignIn = () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
 
       // Success alert
-      alert("You have been signed in successfully"); // Basic alert instead of toast
+      // alert("You have been signed in successfully"); // Basic alert instead of toast
 
       // Redirect to registration page
-      navigate('/registration');
+      navigate('/dashboard');
 
     } catch (error) {
       alert("Failed to sign in. Please try again."); // Basic alert instead of toast
@@ -59,7 +59,6 @@ const SignIn = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="input-field"
-                  placeholder="you@example.com"
                   disabled={isLoading}
                 />
               </div>
@@ -79,7 +78,7 @@ const SignIn = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="input-field"
-                  placeholder="••••••••"
+                
                   disabled={isLoading}
                 />
               </div>

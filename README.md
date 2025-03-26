@@ -32,7 +32,7 @@ DigiVoter is a modern, web-based application designed to revolutionize the voter
 1.  **Registration:** Users create an account (sign up) and complete the registration form during the designated registration period.
 2.  **QR Code Generation:** After successful registration, a unique QR code is generated and presented to the voter.
 3.  **Verification:** At the polling station, voters scan their QR code at a kiosk.
-4.  **Facial Recognition:** The system simulates facial recognition to match the voter with their registered data.
+4.  **Facial Recognition(Kiosk):** The system simulates facial recognition to match the voter with their registered data.
 5.  **Voting:** If verification is successful, the voter proceeds to cast their vote.
 
 ## Technologies Used
@@ -88,7 +88,7 @@ There is also a signin and signup form for user authentication.
 *   **Backend Integration:** Develop the backend with Node.js, Express.js, and connect it to MongoDB.
 *   **Full Authentication:** Implement full user authentication with JWT.
 *   **Enhanced Security:** Implement more robust data validation, sanitization, and encryption.
-* **User dashboard**: each user will have a profile page
+* **User dashboard(Working on this)**: each user will have a profile page
 * **Database integration**: the app will use mongo to save the data.
 * **Admin Panel**: A page for the admin.
 * **Error handling**: Add more error handling.

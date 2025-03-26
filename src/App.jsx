@@ -11,6 +11,7 @@ import SignUp from "./pages/SignUp";
 import Registration from "./pages/Registration";
 import Verification from "./pages/Verification";
 import NotFound from "./pages/NotFound";
+import Dashboard from "./pages/DashBoard";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/signup" element={<SignUp />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/verification" element={<Verification />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

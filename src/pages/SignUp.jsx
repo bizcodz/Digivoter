@@ -40,9 +40,9 @@ const SignUp = () => {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      alert('Account created: You have successfully signed up'); // Replaced toast with alert
+      // alert('Account created: You have successfully signed up'); // Replaced toast with alert
 
-      navigate('/registration');
+      navigate('/dashboard');
     } catch (error) {
       alert('Error: Failed to create account. Please try again.'); // Replaced toast with alert
     } finally {
@@ -74,7 +74,7 @@ const SignUp = () => {
                   value={formData.fullName}
                   onChange={handleChange}
                   className="input-field"
-                  placeholder="John Doe"
+
                   disabled={isLoading}
                 />
               </div>
@@ -90,7 +90,7 @@ const SignUp = () => {
                   value={formData.email}
                   onChange={handleChange}
                   className="input-field"
-                  placeholder="you@example.com"
+                 
                   disabled={isLoading}
                 />
               </div>
@@ -106,7 +106,7 @@ const SignUp = () => {
                   value={formData.password}
                   onChange={handleChange}
                   className="input-field"
-                  placeholder="••••••••"
+                 
                   disabled={isLoading}
                 />
               </div>
@@ -122,7 +122,7 @@ const SignUp = () => {
                   value={formData.confirmPassword}
                   onChange={handleChange}
                   className="input-field"
-                  placeholder="••••••••"
+               
                   disabled={isLoading}
                 />
               </div>
